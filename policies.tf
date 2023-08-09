@@ -27,7 +27,7 @@ resource "spacelift_policy_attachment" "access" {
 # You can read more about plan policies here:
 #
 # https://docs.spacelift.io/concepts/policy/terraform-plan-policy
-resource "spacelift_policy" "plan" {
+resource "spacelift_policy" "plan_new" {
   type = "PLAN"
 
   name = "Enforce password strength"
@@ -50,7 +50,7 @@ resource "spacelift_policy_attachment" "plan" {
 # You can read more about push policies here:
 #
 # https://docs.spacelift.io/concepts/policy/git-push-policy
-resource "spacelift_policy" "push" {
+resource "spacelift_policy" "push_new" {
   type = "GIT_PUSH"
 
   name = "Ignore commits outside the project root"
