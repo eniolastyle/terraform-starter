@@ -6,7 +6,7 @@
 # You can read more about access policies here:
 #
 # https://docs.spacelift.io/concepts/policy/stack-access-policy
-resource "spacelift_policy" "access" {
+resource "spacelift_policy" "access_new" {
   type = "ACCESS"
 
   name = "All of Engineering gets read access"
