@@ -4,7 +4,7 @@
 # You can read about contexts here:
 #
 # https://docs.spacelift.io/concepts/context
-resource "spacelift_context" "managed" {
+resource "spacelift_context" "managed_new" {
   name        = "Managed context"
   description = "Your first context managed by Terraform"
 }
