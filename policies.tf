@@ -15,7 +15,7 @@ resource "spacelift_policy" "access_new" {
 
 # Access policies only take effect when attached to the stack.
 resource "spacelift_policy_attachment" "access" {
-  policy_id = spacelift_policy.access.id
+  policy_id = spacelift_policy.access_new.id
   stack_id  = spacelift_stack.managed.id
 }
 
@@ -36,7 +36,7 @@ resource "spacelift_policy" "plan_new" {
 
 # Plan policies only take effect when attached to the stack.
 resource "spacelift_policy_attachment" "plan" {
-  policy_id = spacelift_policy.plan.id
+  policy_id = spacelift_policy.plan_new.id
   stack_id  = spacelift_stack.managed.id
 }
 
@@ -59,7 +59,7 @@ resource "spacelift_policy" "push_new" {
 
 # Push policies only take effect when attached to the stack.
 resource "spacelift_policy_attachment" "push" {
-  policy_id = spacelift_policy.push.id
+  policy_id = spacelift_policy.push_new.id
   stack_id  = spacelift_stack.managed.id
 }
 
